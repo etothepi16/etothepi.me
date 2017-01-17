@@ -4,7 +4,7 @@
     <title>{{page.title}}</title>
 </head>
 <body>
-	<p><link href="https://github.com/etothepi16/etothepi.me/metaballs/index.html" rel="Meta Balls"></p>
-	<p><link href="https://github.com/etothepi16/etothepi.me/agarp5/index.html" rel="Agar.p5"></p>
+	<p><a href="etothepi.me/metaballs/index.html">Meta Balls</a></p>
+	<p><a href="etothepi.me/agarp5/index.html">Agar.p5</a></p>
 </body>
 </html>
