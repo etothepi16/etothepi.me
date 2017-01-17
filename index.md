@@ -1,7 +1,3 @@
----
-title: p5.js sketches and more!
----
-
 <!DOCTYPE HTML>
 <html>
   <head>
