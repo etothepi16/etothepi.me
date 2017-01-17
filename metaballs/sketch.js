@@ -16,13 +16,16 @@ function draw(){
 
 	for (var x = 0; x < width; x++){
 		for (var y = 0; y < height; y++){
-			var index = x + y*width;
+			var index = 4*(x + y*width);
 			var sum = 0;
 			for (var z = 0; z < blobs.length; z++){
 				var d = dist(x,y,blobs[z].pos.x,blobs[z].pos.y);
 				sum += (10 * blobs[z].r / d);
 			}
-			pixels[index] = color(sum, 255, 255);
+			pixels[index] = sum;
+			pixels[index+1] = 255;
+			pixels[index+2] = 255;
+			pixels[index+3] = 0;
 		}
 	}
 	updatePixels();
