@@ -1,7 +1,12 @@
+---
+title: p5.js sketches and more!
+---
+
+<!DOCTYPE HTML>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>p5.js sketches and more!</title>
+    <title>{{ page.title }}</title>
 </head>
 <body>
 	<p>[Meta balls](https://github.com/etothepi16/etothepi.me/metaballs/index.html)</p>
