@@ -11,6 +11,7 @@ var zoom = 1;
 
 function setup(){
 	createCanvas(625,625);
+	canvas.parent('sketch-holder');
 	ball = new Ball(width/2,height/2,64);
 	for (var i = 0; i < 50; i++){
 		var x = random(-width,width*2);
