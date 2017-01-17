@@ -1,6 +1,7 @@
 var blobs = [];
 
 function setup(){
+	background(51);
 	createCanvas(640,640);
 	pixelDensity(1);
 	colorMode(HSB);
@@ -10,8 +11,6 @@ function setup(){
 }
 
 function draw(){
-	background(51);
-
 	loadPixels();
 
 	for (var x = 0; x < width; x++){
@@ -32,6 +31,6 @@ function draw(){
 
 	for (var i = 0; i < blobs.length; i++){
 		blobs[i].update();
-		blobs[i].show();
+		//blobs[i].show();
 	}
 }
