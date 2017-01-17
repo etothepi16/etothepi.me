@@ -1,8 +1,8 @@
 var blobs = [];
 
 function setup(){
-	background(51);
 	createCanvas(640,640);
+	background(51);
 	pixelDensity(1);
 	colorMode(HSB);
 	for (var i = 0; i < 5; i++){
