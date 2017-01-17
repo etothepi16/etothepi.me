@@ -1,4 +1,10 @@
 ---
 title: p5.js sketches and more!
 theme: jekyll-theme-midnight
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 ---
