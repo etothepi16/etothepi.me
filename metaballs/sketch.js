@@ -2,6 +2,7 @@ var blobs = [];
 
 function setup(){
 	createCanvas(640,640);
+	canvas.parent('sketch-holder');
 	background(51);
 	pixelDensity(1);
 	colorMode(HSB);
