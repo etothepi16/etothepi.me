@@ -14,10 +14,10 @@ function setup() {
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
-  minSliderDiv = createDiv("holds min slider");
+  minSliderDiv = createDiv();
   minSlider.parent(minSliderDiv);
   maxSlider = createSlider(0, 2.5, 2.5, 0.01);
-  maxSliderDiv = createDiv("holds max slider")
+  maxSliderDiv = createDiv()
   maxSlider.parent(maxSliderDiv);
 }
 
