@@ -13,7 +13,9 @@ function setup() {
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
+  minSlider.parent('sketch-holder');
   maxSlider = createSlider(0, 2.5, 2.5, 0.01);
+  maxSlider.parent('sketch-holder');
 }
 
 function draw() {
