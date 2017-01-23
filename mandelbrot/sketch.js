@@ -15,10 +15,10 @@ function setup() {
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
   minSliderDiv = createDiv(minSlider);
-  //minSlider.parent(minSliderDiv);
+  cnv.child(minSliderDiv);
   maxSlider = createSlider(0, 2.5, 2.5, 0.01);
   maxSliderDiv = createDiv(maxSlider);
-  //maxSlider.parent(maxSliderDiv);
+  cnv.child(maxSliderDiv);
 }
 
 function draw() {
