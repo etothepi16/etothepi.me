@@ -5,19 +5,14 @@ var maxval = 0.5;
 var minSlider;
 var maxSlider;
 
-var minSliderDiv;
-var maxSliderDiv;
-
 function setup() {
   cnv = createCanvas(200, 200);
   cnv.parent('sketch-holder');
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
-  minSliderDiv = createDiv(minSlider);
   cnv.child(minSlider);
   maxSlider = createSlider(0, 2.5, 2.5, 0.01);
-  maxSliderDiv = createDiv(maxSlider);
   cnv.child(maxSlider);
 }
 
