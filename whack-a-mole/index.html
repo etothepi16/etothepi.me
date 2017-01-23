@@ -1,0 +1,132 @@
+<html lang="en-US">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<head>		
+    <style>
+	
+			#whack-a-mole{ width:100%; height:100%; overflow:hidden; position:relative;}
+
+			.mole{ 
+				background-color:rgb(128, 64, 0); 
+				border-radius:100px 100px 0px 0px;
+				height:1200%;
+				width:10%;
+				position:absolute; 
+				top: 1000%;
+				background-image:url(mole.bmp);
+				background-size:100%;
+				background-repeat:no-repeat;
+				background-position:0px 25px;
+				z-index:2;
+				}
+			.left_ear{
+				background-color:rgb(128, 64, 0); 
+				border-radius:100px;
+				position:absolute;
+				float:left;
+				min-width: 30%;
+    				padding-top: 30%;
+				z-index:1;
+			}
+			.right_ear{
+				background-color:rgb(128, 64, 0); 
+				border-radius:100px;
+				position:absolute;
+				float:right;
+				min-width: 30%;
+    				padding-top: 30%;
+				left:70%;
+				z-index:1;
+			}
+			.try_again { cursor:pointer; }
+			#mole1 { left: 10%; }
+			#mole2 { left: 45%; }
+			#mole3 { left: 80%; }
+
+			.score{font-family:arial; font-size:5vw; position:absolute; right:5%; z-index:3;}
+			
+		</style>
+						
+							
+	<div id="#whack-a-mole">
+
+		<div class="scorezone">Score: 0</div>
+
+		<div class="mole" id="mole1">
+			<div class="left_ear"></div>
+			<div class="right_ear"></div>
+		</div>
+		<div class="mole" id="mole2">
+			<div class="left_ear"></div>
+			<div class="right_ear"></div>
+		</div>
+		<div class="mole" id="mole3">
+			<div class="left_ear"></div>
+			<div class="right_ear"></div>
+		</div>
+
+	</div>
+
+	<script>
+		var do_only_once = 0;
+
+		jQuery('#more_button').click(function(){
+
+				var add = 0;
+
+				function game_over(){
+	
+					jQuery('.mole').stop().animate({'top':'1000%'},300);
+					jQuery('.scorezone').html('GAME OVER');
+					jQuery('.scorezone').append('<div class="try_again">TRY AGAIN</div>');
+	
+				}
+	
+				function start(){
+					add = 0;
+					jQuery('.scorezone').html('Score: ' + add);
+					jQuery('.mole').animate({'top':'0%'},5000, function(){
+						game_over();
+						jQuery('.try_again').click(function(){start();});
+					});
+					
+				}
+
+				jQuery('.mole').hover(function(){
+
+					jQuery(this).css('background-image','url(hurt.bmp)');
+					jQuery(this).stop().animate({'top':'1000%'},300, function(){
+
+						add = add - (-1);
+						jQuery('.scorezone').html('Score: ' + add);
+						jQuery(this).css('background-image','url(mole.bmp)');
+						jQuery(this).animate({'top':'0%'},5000, function(){
+
+							game_over();
+							jQuery('.try_again').click(function(){start();});
+
+						});
+
+					});
+				});
+				
+			if (do_only_once == 0){
+
+			do_only_once = 1;
+
+
+				start();
+	
+			}
+
+		});
+
+
+	</script>
+  </head>
+  <body>
+  <p>Credit goes to <a href="http://www.deathkiller.com/">Ian Boswell</a>.</p>
+  </body>
+</html>
