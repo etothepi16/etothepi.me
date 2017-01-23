@@ -12,8 +12,10 @@ function setup() {
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
   minSlider.parent('sketch-holder');
+  minSlider.position(0,250);
   maxSlider = createSlider(0, 2.5, 2.5, 0.01);
   maxSlider.parent('sketch-holder');
+  minSlider.position(0,280);
 }
 
 function draw() {
