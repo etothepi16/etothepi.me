@@ -9,7 +9,7 @@ function setup() {
   cnv = createCanvas(200, 200);
   cnv.parent('sketch-holder');
   s =  document.getElementById('sketch-holder');
-  s.html('<br>', true);
+  s.InnerHTML('<br>', true);
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
