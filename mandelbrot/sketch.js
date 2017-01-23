@@ -8,8 +8,9 @@ var maxSlider;
 function setup() {
   cnv = createCanvas(200, 200);
   cnv.parent('sketch-holder');
-  cont =  document.getElementById('sketch-holder');
-  cont.html('<br>', true);
+  sketch =  document.getElementById('sketch-holder');
+  pixelDensity(1);
+  sketch.html('<br>', true);
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
