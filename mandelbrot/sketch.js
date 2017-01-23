@@ -6,7 +6,7 @@ var minSlider;
 var maxSlider;
 
 function setup() {
-  cnv = createCanvas(200, 200);
+  cnv = createCanvas(300, 300);
   cnv.parent('sketch-holder');
   pixelDensity(1);
   spdiv = createDiv('<br>');
