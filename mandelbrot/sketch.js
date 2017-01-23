@@ -11,9 +11,9 @@ function setup() {
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
-  cnv.child(minSlider);
+  minSlider.parent(cnv);
   maxSlider = createSlider(0, 2.5, 2.5, 0.01);
-  cnv.child(maxSlider);
+  maxSlider.parent(cnv);
 }
 
 function draw() {
