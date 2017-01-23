@@ -12,8 +12,10 @@ function setup() {
   spdiv = createDiv('<br>');
   spdiv.parent('sketch-holder');
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
+  minSlider.html("Minimum a, b", true);
   minSlider.parent('sketch-holder');
   maxSlider = createSlider(0, 2.5, 2.5, 0.01);
+  maxSlider.html("Maximum a, b", true);
   maxSlider.parent('sketch-holder');
  
 }
