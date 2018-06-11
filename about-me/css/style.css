@@ -1,0 +1,26 @@
+.header {
+  background-color: #00aaf0;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+.column {
+  float: left;
+  font-size: 120%;
+}
+.column.left{
+  width: 60%;
+}
+.column.right{
+  width: 40%;
+}
+
+body{
+  background-color:#FFF8E7;
+}
+p{
+  text-align:justify;
+}
